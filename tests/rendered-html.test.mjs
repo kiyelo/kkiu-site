@@ -31,3 +31,8 @@ test("includes GitHub Pages domain files", async () => {
   const cname = await readFile(new URL("CNAME", root), "utf8");
   assert.equal(cname.trim(), "kkiu.3dayweekendlab.com");
 });
+
+test("uses the full studio name without obsolete location or abbreviation copy", async () => {
+  const html = await readFile(new URL("index.html", root), "utf8");
+  assert.doesNotMatch(html, /3DWL|INDEPENDENT DEVELOPMENT STUDIO|SEOUL · KR/i);
+});
