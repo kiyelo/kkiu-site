@@ -50,7 +50,7 @@ function BrandLockup({ compact = false }: { compact?: boolean }) {
         <span>3 DAY</span>
         <span>WEEKEND</span>
         <span>
-          LAB<span className="wordmark-dot">.</span>
+          LAB<span className="square-dot" aria-hidden="true" />
         </span>
       </span>
     </span>
@@ -75,7 +75,7 @@ export function Header({
       <div className="header-inner">
         <Link className="header-brand" href={home} aria-label="3 DAY WEEKEND LAB. home">
           <LogoSymbol compact />
-          <span>3 DAY WEEKEND LAB<span className="red">.</span></span>
+          <span>3 DAY WEEKEND LAB<span className="square-dot" aria-hidden="true" /></span>
         </Link>
 
         <nav className="desktop-nav" aria-label="Main navigation">
@@ -140,14 +140,14 @@ export function Footer({ locale }: { locale: Locale }) {
     <footer className="site-footer">
       <div className="footer-inner">
         <div>
-          <strong>3 DAY WEEKEND LAB<span className="red">.</span></strong>
+          <strong>3 DAY WEEKEND LAB<span className="square-dot" aria-hidden="true" /></strong>
         </div>
         <nav aria-label="Legal">
           <Link href={p(locale, "/privacy")}>{c.privacy}</Link>
           <Link href={p(locale, "/terms")}>{c.terms}</Link>
           <Link href={p(locale, "/delete-account")}>{c.deletion}</Link>
         </nav>
-        <p className="copyright">© {new Date().getFullYear()} 3 DAY WEEKEND LAB<span className="red">.</span></p>
+        <p className="copyright">© {new Date().getFullYear()} 3 DAY WEEKEND LAB<span className="square-dot" aria-hidden="true" /></p>
       </div>
     </footer>
   );
@@ -177,7 +177,7 @@ export function HomePage({ locale }: { locale: Locale }) {
           <div className="product-row">
             <div>
               <p className="red-label">TODO APPLICATION</p>
-              <h1>{ko ? "끼우 투두" : "Kkiu Todo"}<span className="red">.</span></h1>
+              <h1>{ko ? "끼우 투두" : "Kkiu Todo"}<span className="square-dot" aria-hidden="true" /></h1>
             </div>
             <div className="product-summary">
               <p>
@@ -227,7 +227,7 @@ export function ProductPage({ locale }: { locale: Locale }) {
           <div className="kkiu-label">PRODUCT / 01</div>
           <div className="kkiu-title">
             <span>KKIU</span>
-            <span>TODO<span className="red">.</span></span>
+            <span>TODO<span className="square-dot" aria-hidden="true" /></span>
           </div>
           <p>
             {ko
@@ -276,7 +276,7 @@ export function ProductPage({ locale }: { locale: Locale }) {
 
         <section className="download-section">
           <span>ANDROID</span>
-          <h2>GOOGLE PLAY<span className="red">.</span></h2>
+          <h2>GOOGLE PLAY<span className="square-dot" aria-hidden="true" /></h2>
           <p>{ko ? "다운로드 링크는 출시 시 연결됩니다." : "The download link will be added at launch."}</p>
           <span className="coming-soon">{ko ? "준비 중" : "COMING SOON"}</span>
         </section>
@@ -315,7 +315,7 @@ export function LegalPage({
         <div className="legal-wrap">
           <header className="legal-hero">
             <p>KKIU TODO / POLICY</p>
-            <h1>{title}<span className="red">.</span></h1>
+            <h1>{title}<span className="square-dot" aria-hidden="true" /></h1>
             <div className="legal-lead">{lead}</div>
           </header>
           {notice ? (
@@ -350,7 +350,7 @@ export function DeleteAccountPage({ locale }: { locale: Locale }) {
         <div className="legal-wrap">
           <header className="legal-hero">
             <p>KKIU TODO / ACCOUNT</p>
-            <h1>{ko ? "계정 삭제" : "Delete account"}<span className="red">.</span></h1>
+            <h1>{ko ? "계정 삭제" : "Delete account"}<span className="square-dot" aria-hidden="true" /></h1>
             <div className="legal-lead">
               {ko
                 ? "가입에 사용한 동일한 Google 계정으로 다시 인증하여 계정 소유자 본인임을 확인합니다."
