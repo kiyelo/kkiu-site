@@ -13,8 +13,8 @@ const routes = [
   ["en/privacy/index.html", "Privacy Policy"],
   ["terms/index.html", "이용약관"],
   ["en/terms/index.html", "Terms of Service"],
-  ["delete-account/index.html", "끼우 계정 삭제"],
-  ["en/delete-account/index.html", "Delete your Kkiu account"],
+  ["delete-account/index.html", "끼우 회원 탈퇴"],
+  ["en/delete-account/index.html", "Leave Kkiu"],
 ];
 
 test("exports every Korean and English route", async () => {
@@ -30,6 +30,16 @@ test("includes GitHub Pages domain files", async () => {
   await access(new URL(".nojekyll", root));
   const cname = await readFile(new URL("CNAME", root), "utf8");
   assert.equal(cname.trim(), "kkiu.3dayweekendlab.com");
+});
+
+test("links the product page to the Kkiu web app", async () => {
+  for (const path of ["index.html", "en/index.html"]) {
+    const html = await readFile(new URL(path, root), "utf8");
+    assert.match(html, /href="\/app\/"/i, path);
+  }
+
+  const appHtml = await readFile(new URL("app/index.html", root), "utf8");
+  assert.match(appHtml, /\/app\/assets\//i);
 });
 
 test("uses the full studio name without obsolete location or abbreviation copy", async () => {

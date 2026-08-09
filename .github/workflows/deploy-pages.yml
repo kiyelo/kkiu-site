@@ -38,6 +38,26 @@ jobs:
       - name: Build static site
         run: pnpm build
 
+      - name: Checkout Kkiu web app
+        uses: actions/checkout@v4
+        with:
+          repository: kiyelo/kkiu-todo
+          path: kkiu-todo
+
+      - name: Install Kkiu web app dependencies
+        working-directory: kkiu-todo
+        run: pnpm install --frozen-lockfile
+
+      - name: Build Kkiu web app for /app
+        working-directory: kkiu-todo
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
+        run: pnpm run build --base=/app/
+
+      - name: Add Kkiu web app to site
+        run: cp -R kkiu-todo/dist out/app
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

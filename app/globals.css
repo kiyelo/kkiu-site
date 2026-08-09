@@ -165,7 +165,8 @@ a { color: inherit; text-decoration: none; }
 .download-section > span:first-child { color: var(--red); font-size: 10px; font-weight: 900; letter-spacing: .2em; }
 .download-section h2 { margin: 22px 0 8px; font-size: clamp(60px, 10vw, 150px); line-height: .95; letter-spacing: -.07em; }
 .download-section p { color: #aaa6a2; }
-.coming-soon { margin-top: 30px; padding: 12px 18px; border: 1px solid #4a4846; color: #8f8b88; font-size: 11px; font-weight: 900; letter-spacing: .14em; }
+.app-link { margin-top: 30px; display: inline-flex; align-items: center; gap: 24px; padding: 15px 20px; border: 1px solid white; color: white; font-size: 12px; font-weight: 900; letter-spacing: .1em; transition: background .2s ease, color .2s ease; }
+.app-link:hover, .app-link:focus-visible { background: white; color: var(--black); }
 
 .legal-main { min-height: 75vh; padding: 100px 0 140px; }
 .legal-wrap { width: min(920px, calc(100% - 48px)); margin-inline: auto; }

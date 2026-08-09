@@ -275,10 +275,12 @@ export function ProductPage({ locale }: { locale: Locale }) {
         </section>
 
         <section className="download-section">
-          <span>ANDROID</span>
-          <h2>GOOGLE PLAY<span className="square-dot" aria-hidden="true" /></h2>
-          <p>{ko ? "다운로드 링크는 출시 시 연결됩니다." : "The download link will be added at launch."}</p>
-          <span className="coming-soon">{ko ? "준비 중" : "COMING SOON"}</span>
+          <span>WEB APP</span>
+          <h2>{ko ? "지금 시작하기" : "START NOW"}<span className="square-dot" aria-hidden="true" /></h2>
+          <p>{ko ? "설치 없이 브라우저에서 바로 끼우를 사용할 수 있습니다." : "Use Kkiu in your browser—no installation required."}</p>
+          <Link className="app-link" href="/app/">
+            {ko ? "끼우 웹앱 열기" : "Open Kkiu Web App"} <span aria-hidden="true">→</span>
+          </Link>
         </section>
       </main>
       <Footer locale={locale} />
