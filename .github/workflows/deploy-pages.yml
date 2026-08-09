@@ -46,7 +46,7 @@ jobs:
 
       - name: Install Kkiu web app dependencies
         working-directory: kkiu-todo
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --ignore-workspace --frozen-lockfile
 
       - name: Build Kkiu web app for /app
         working-directory: kkiu-todo
