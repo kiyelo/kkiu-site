@@ -17,12 +17,12 @@ const labels = {
   en: {
     product: "Products",
     contact: "Contact",
-    kkiu: "Kkiu Todo",
+    kkiu: "KKiu Todo",
     menu: "Menu",
     intro: "Overview",
     privacy: "Privacy",
     terms: "Terms",
-    deletion: "Leave Kkiu",
+    deletion: "Leave KKiu Todo",
   },
 } as const;
 
@@ -117,10 +117,10 @@ export function ProductSubnav({ locale, active = "intro" }: { locale: Locale; ac
   ];
 
   return (
-    <nav className="product-subnav" aria-label={locale === "ko" ? "끼우 메뉴" : "Kkiu navigation"}>
+    <nav className="product-subnav" aria-label={locale === "ko" ? "끼우 투두 메뉴" : "KKiu Todo navigation"}>
       <div className="subnav-inner">
         <Link className="subnav-title" href={locale === "ko" ? "/" : "/en"}>
-          KKIU TODO
+          KKiu Todo
         </Link>
         <div className="subnav-links">
           {links.map(([key, href, label]) => (
@@ -177,7 +177,7 @@ export function HomePage({ locale }: { locale: Locale }) {
           <div className="product-row">
             <div>
               <p className="red-label">TODO APPLICATION</p>
-              <h1>{ko ? "끼우 투두" : "Kkiu Todo"}<span className="square-dot" aria-hidden="true" /></h1>
+              <h1>{ko ? "끼우 투두" : "KKiu Todo"}<span className="square-dot" aria-hidden="true" /></h1>
             </div>
             <div className="product-summary">
               <p>
@@ -226,8 +226,8 @@ export function ProductPage({ locale }: { locale: Locale }) {
         <section className="kkiu-hero">
           <div className="kkiu-label">PRODUCT / 01</div>
           <div className="kkiu-title">
-            <span>KKIU</span>
-            <span>TODO<span className="square-dot" aria-hidden="true" /></span>
+            <span>KKiu</span>
+            <span>Todo<span className="square-dot" aria-hidden="true" /></span>
           </div>
           <p>
             {ko
@@ -238,10 +238,10 @@ export function ProductPage({ locale }: { locale: Locale }) {
 
         <section className="kkiu-overview">
           <div className="overview-copy">
-            <span className="section-index">ABOUT KKIU</span>
+            <span className="section-index">ABOUT KKIU TODO</span>
             <h2>{ko ? "할 일은 단순하게.\n하루는 가볍게." : "Simple tasks.\nA lighter day."}</h2>
           </div>
-          <div className="todo-board" aria-label={ko ? "끼우 투두 화면 예시" : "Kkiu example task list"}>
+          <div className="todo-board" aria-label={ko ? "끼우 투두 화면 예시" : "KKiu Todo example task list"}>
             <div className="todo-head">
               <strong>{ko ? "오늘" : "Today"}</strong>
               <span>03</span>
@@ -277,9 +277,9 @@ export function ProductPage({ locale }: { locale: Locale }) {
         <section className="download-section">
           <span>WEB APP</span>
           <h2>{ko ? "지금 시작하기" : "START NOW"}<span className="square-dot" aria-hidden="true" /></h2>
-          <p>{ko ? "설치 없이 브라우저에서 바로 끼우를 사용할 수 있습니다." : "Use Kkiu in your browser—no installation required."}</p>
+          <p>{ko ? "설치 없이 브라우저에서 바로 끼우 투두를 사용할 수 있습니다." : "Use KKiu Todo in your browser—no installation required."}</p>
           <Link className="app-link" href="/app/">
-            {ko ? "끼우 웹앱 열기" : "Open Kkiu Web App"} <span aria-hidden="true">→</span>
+            {ko ? "끼우 투두 웹앱 열기" : "Open KKiu Todo Web App"} <span aria-hidden="true">→</span>
           </Link>
         </section>
       </main>
@@ -352,18 +352,18 @@ export function DeleteAccountPage({ locale }: { locale: Locale }) {
         <div className="legal-wrap">
           <header className="legal-hero">
             <p>KKIU TODO / ACCOUNT</p>
-            <h1>{ko ? "회원 탈퇴" : "Leave Kkiu"}<span className="square-dot" aria-hidden="true" /></h1>
+            <h1>{ko ? "회원 탈퇴" : "Leave KKiu Todo"}<span className="square-dot" aria-hidden="true" /></h1>
             <div className="legal-lead">
               {ko
                 ? "가입에 사용한 동일한 Google 계정으로 다시 인증하여 회원 본인임을 확인합니다."
-                : "Kkiu verifies ownership by asking you to authenticate again with the same Google account used to sign up."}
+                : "KKiu Todo verifies ownership by asking you to authenticate again with the same Google account used to sign up."}
             </div>
           </header>
           <div className="deletion-flow">
             {[
-              ko ? ["01", "Google로 다시 로그인", "끼우 가입에 사용한 Google 계정을 선택합니다."] : ["01", "Sign in again", "Choose the Google account originally used for Kkiu."],
-              ko ? ["02", "회원 정보 대조", "서버가 Google 인증 정보와 기존 끼우 회원 정보를 대조합니다."] : ["02", "Match the membership", "The server matches Google’s authentication response with your Kkiu membership."],
-              ko ? ["03", "탈퇴 의사 확인", "탈퇴 시 처리되는 정보와 결과를 안내한 뒤 마지막 확인을 받습니다."] : ["03", "Confirm withdrawal", "Kkiu explains what happens when you leave and asks for final confirmation."],
+              ko ? ["01", "Google로 다시 로그인", "끼우 투두 가입에 사용한 Google 계정을 선택합니다."] : ["01", "Sign in again", "Choose the Google account originally used for KKiu Todo."],
+              ko ? ["02", "회원 정보 대조", "서버가 Google 인증 정보와 기존 끼우 투두 회원 정보를 대조합니다."] : ["02", "Match the membership", "The server matches Google’s authentication response with your KKiu Todo membership."],
+              ko ? ["03", "탈퇴 의사 확인", "탈퇴 시 처리되는 정보와 결과를 안내한 뒤 마지막 확인을 받습니다."] : ["03", "Confirm withdrawal", "KKiu Todo explains what happens when you leave and asks for final confirmation."],
             ].map(([num, title, body]) => (
               <article key={num}>
                 <span>{num}</span>
@@ -378,7 +378,7 @@ export function DeleteAccountPage({ locale }: { locale: Locale }) {
             <p>
               {ko
                 ? "3 DAY WEEKEND LAB.은 회원 탈퇴를 위해 Google 비밀번호나 일회용 인증 코드를 요청하지 않습니다."
-                : "3 DAY WEEKEND LAB. never asks for your Google password or one-time code when you leave Kkiu."}
+                : "3 DAY WEEKEND LAB. never asks for your Google password or one-time code when you leave KKiu Todo."}
             </p>
           </section>
         </div>
