@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { LegalPage } from "../../ui";
 
 export const metadata: Metadata = {
-  title: "Kkiu Terms of Service",
-  description: "Terms for using Kkiu.",
+  title: "KKiu Todo Terms of Service",
+  description: "Terms for using KKiu Todo.",
 };
 
 export default function Page() {
@@ -12,24 +12,24 @@ export default function Page() {
       locale="en"
       active="terms"
       title="Terms of Service"
-      lead="These terms govern the use of Kkiu, a to-do application provided by 3 DAY WEEKEND LAB."
+      lead="These terms govern the use of KKiu Todo, a to-do application provided by 3 DAY WEEKEND LAB."
       sections={[
         {
           title: "1. How these terms apply",
           paragraphs: [
-            "These terms apply when a user accepts them and creates a Kkiu account. 3 DAY WEEKEND LAB. publishes the terms on the website so users can review them at any time.",
+            "These terms apply when a user accepts them and creates a KKiu Todo account. 3 DAY WEEKEND LAB. publishes the terms on the website so users can review them at any time.",
           ],
         },
         {
           title: "2. The service",
           paragraphs: [
-            "Kkiu provides personal task management, shared tasks between members, activity and completion status, and notifications. If paid features are introduced, the price and conditions will be shown before purchase.",
+            "KKiu Todo provides personal task management, shared tasks between members, activity and completion status, and notifications. If paid features are introduced, the price and conditions will be shown before purchase.",
           ],
         },
         {
           title: "3. Registration and accounts",
           paragraphs: [
-            "Users may register through the authentication methods offered by Kkiu. When an external sign-in service is used, that service’s terms may also apply.",
+            "Users may register through the authentication methods offered by KKiu Todo. When an external sign-in service is used, that service’s terms may also apply.",
             "Users must provide accurate information, keep access to their account secure, and report unauthorized use to 3dayweekendlab@gmail.com.",
           ],
         },
@@ -46,7 +46,7 @@ export default function Page() {
           title: "5. User content and ownership",
           paragraphs: [
             "Users retain rights in the tasks and content they create. Users give 3 DAY WEEKEND LAB. permission to store, synchronize, and display that content to members of the relevant Kkiri only as needed to provide the service.",
-            "Kkiu’s name, design, software, and other service materials belong to 3 DAY WEEKEND LAB. or their respective rights holders.",
+            "KKiu Todo’s name, design, software, and other service materials belong to 3 DAY WEEKEND LAB. or their respective rights holders.",
           ],
         },
         {
@@ -62,15 +62,15 @@ export default function Page() {
           ],
         },
         {
-          title: "8. Leaving Kkiu",
+          title: "8. Leaving KKiu Todo",
           paragraphs: [
-            "Users may leave Kkiu at any time through the membership withdrawal feature. Member information and personal data are deleted, while the withdrawal page and Privacy Policy explain how shared Kkiri data is handled.",
+            "Users may leave KKiu Todo at any time through the membership withdrawal feature. Member information and personal data are deleted, while the withdrawal page and Privacy Policy explain how shared Kkiri data is handled.",
           ],
         },
         {
           title: "9. Responsibility for the service",
           paragraphs: [
-            "3 DAY WEEKEND LAB. uses reasonable care in operating Kkiu. To the extent permitted by law, it is not responsible for interruptions caused by events outside its reasonable control, such as natural disasters, network failures, or third-party platform outages, unless caused by its intent or gross negligence.",
+            "3 DAY WEEKEND LAB. uses reasonable care in operating KKiu Todo. To the extent permitted by law, it is not responsible for interruptions caused by events outside its reasonable control, such as natural disasters, network failures, or third-party platform outages, unless caused by its intent or gross negligence.",
             "Nothing in these terms excludes liability that cannot lawfully be excluded or limits a user’s statutory rights.",
           ],
         },
