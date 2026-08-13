@@ -105,8 +105,8 @@ export function AccountDeleteClient({ locale }: { locale: "ko" | "en" }) {
       <div className="account-action account-success" role="status">
         <span>✓</span>
         <div>
-          <h2>{ko ? "회원 탈퇴가 완료되었습니다." : "You have left Kkiu."}</h2>
-          <p>{ko ? "끼우에서 로그아웃되었으며 탈퇴한 회원 정보로 다시 로그인할 수 없습니다." : "You have been signed out and can no longer access the withdrawn membership."}</p>
+          <h2>{ko ? "회원 탈퇴가 완료되었습니다." : "You have left KKiu Todo."}</h2>
+          <p>{ko ? "끼우 투두에서 로그아웃되었으며 탈퇴한 회원 정보로 다시 로그인할 수 없습니다." : "You have been signed out and can no longer access the withdrawn membership."}</p>
         </div>
       </div>
     );
@@ -120,8 +120,8 @@ export function AccountDeleteClient({ locale }: { locale: "ko" | "en" }) {
           <h2>{ko ? "Google 계정으로 본인 확인" : "Verify with your Google account"}</h2>
           <p>
             {ko
-              ? "끼우 가입에 사용한 Google 계정을 선택하세요. 로그인은 본인 확인 목적으로만 사용됩니다."
-              : "Choose the Google account used for Kkiu. Sign-in is used only to verify account ownership."}
+              ? "끼우 투두 가입에 사용한 Google 계정을 선택하세요. 로그인은 본인 확인 목적으로만 사용됩니다."
+              : "Choose the Google account used for KKiu Todo. Sign-in is used only to verify account ownership."}
           </p>
         </div>
         <button className="oauth-button" type="button" onClick={signIn}>
@@ -141,7 +141,7 @@ export function AccountDeleteClient({ locale }: { locale: "ko" | "en" }) {
       <div className="verified-user">
         <span className="verified-mark">✓</span>
         <div>
-          <small>{ko ? "확인된 끼우 계정" : "Verified Kkiu account"}</small>
+          <small>{ko ? "확인된 끼우 투두 계정" : "Verified KKiu Todo account"}</small>
           <strong>{user.email ?? user.id}</strong>
         </div>
         <button type="button" className="change-account" onClick={signIn}>
@@ -153,7 +153,7 @@ export function AccountDeleteClient({ locale }: { locale: "ko" | "en" }) {
         <span className="action-index">STEP 02</span>
         <h2>{ko ? "삭제 내용을 확인하세요" : "Confirm what will be deleted"}</h2>
         <ul>
-          <li>{ko ? "끼우 회원 정보 및 프로필" : "Kkiu membership information and profile"}</li>
+          <li>{ko ? "끼우 투두 회원 정보 및 프로필" : "KKiu Todo membership information and profile"}</li>
           <li>{ko ? "개인 할 일, 약관 동의 기록, 기기 푸시 토큰" : "Personal tasks, terms acceptance records, and device push tokens"}</li>
           <li>{ko ? "개인 완료 기록 및 계정과 연결된 알림 대기 데이터" : "Personal completion history and queued notification data linked to the account"}</li>
         </ul>
@@ -183,7 +183,7 @@ export function AccountDeleteClient({ locale }: { locale: "ko" | "en" }) {
         </label>
 
         <button className="delete-button" type="button" disabled={!enabled} onClick={deleteAccount}>
-          {stage === "deleting" ? (ko ? "탈퇴 처리 중…" : "Leaving…") : (ko ? "끼우 회원 탈퇴" : "Leave Kkiu")}
+          {stage === "deleting" ? (ko ? "탈퇴 처리 중…" : "Leaving…") : (ko ? "끼우 투두 회원 탈퇴" : "Leave KKiu Todo")}
         </button>
         {message ? <p className="form-error" role="alert">{message}</p> : null}
       </div>
