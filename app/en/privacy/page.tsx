@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { LegalPage } from "../../ui";
 
 export const metadata: Metadata = {
-  title: "Kkiu Privacy Policy",
-  description: "How Kkiu handles personal information and user rights.",
+  title: "KKiu Todo Privacy Policy",
+  description: "How KKiu Todo handles personal information and user rights.",
 };
 
 export default function Page() {
@@ -12,7 +12,7 @@ export default function Page() {
       locale="en"
       active="privacy"
       title="Privacy Policy"
-      lead="3 DAY WEEKEND LAB. processes only the personal information needed to provide Kkiu."
+      lead="3 DAY WEEKEND LAB. processes only the personal information needed to provide KKiu Todo."
       sections={[
         {
           title: "1. Information we process and why",
@@ -29,7 +29,7 @@ export default function Page() {
         {
           title: "2. Retention",
           bullets: [
-            "Member information, profiles, personal tasks, and settings: until the member leaves Kkiu",
+            "Member information, profiles, personal tasks, and settings: until the member leaves KKiu Todo",
             "Shared Kkiri, task, and activity records: while the relevant Kkiri remains active. Information identifying a departing member is deleted or anonymized.",
             "Kkiri activity may be displayed in the app for the most recent 90 days; this is not the retention period for personal information.",
           ],
@@ -48,7 +48,7 @@ export default function Page() {
             "Purpose: member authentication, data storage, and service operation",
             "Information transferred: the categories listed in Section 1",
             "Country, timing, and method: Japan, transmitted over encrypted networks when the service is used",
-            "Retention: until the member leaves Kkiu or the service agreement with the processor ends",
+            "Retention: until the member leaves KKiu Todo or the service agreement with the processor ends",
           ],
           paragraphs: [
             "The transfer is necessary to perform the service agreement with the user. A user may refuse it by not registering, but account-based features will then be unavailable.",
@@ -58,19 +58,19 @@ export default function Page() {
           title: "5. Deletion",
           paragraphs: [
             "We delete personal information without undue delay when its purpose is fulfilled or its retention period ends. Electronic files are deleted using methods designed to prevent recovery.",
-            "When a member leaves Kkiu, member information and personal data are deleted. Shared Kkiri data may remain for service continuity, but information identifying the departing member is deleted or anonymized.",
+            "When a member leaves KKiu Todo, member information and personal data are deleted. Shared Kkiri data may remain for service continuity, but information identifying the departing member is deleted or anonymized.",
           ],
         },
         {
           title: "6. User and legal representative rights",
           paragraphs: [
-            "Users can view or update their information in the app and may leave Kkiu at any time. Requests to access, correct, delete, or restrict personal information may be sent to the email below and will be handled after identity verification. A legal representative may exercise a child’s rights where applicable law permits.",
+            "Users can view or update their information in the app and may leave KKiu Todo at any time. Requests to access, correct, delete, or restrict personal information may be sent to the email below and will be handled after identity verification. A legal representative may exercise a child’s rights where applicable law permits.",
           ],
         },
         {
           title: "7. Automatically stored information",
           paragraphs: [
-            "Kkiu does not use cookies or SDKs for advertising or user tracking. Authentication information and access records needed to maintain sign-in and service security may be generated during use.",
+            "KKiu Todo does not use cookies or SDKs for advertising or user tracking. Authentication information and access records needed to maintain sign-in and service security may be generated during use.",
           ],
         },
         {
