@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { LegalPage } from "../ui";
 
 export const metadata: Metadata = {
-  title: "끼우 개인정보처리방침",
-  description: "끼우가 처리하는 개인정보와 이용자 권리에 관한 안내입니다.",
+  title: "끼우 투두 개인정보처리방침",
+  description: "끼우 투두가 처리하는 개인정보와 이용자 권리에 관한 안내입니다.",
 };
 
 export default function Page() {
@@ -12,7 +12,7 @@ export default function Page() {
       locale="ko"
       active="privacy"
       title="개인정보처리방침"
-      lead="3 DAY WEEKEND LAB.은 끼우 서비스를 제공하는 데 필요한 개인정보를 최소한으로 처리합니다."
+      lead="3 DAY WEEKEND LAB.은 끼우 투두 서비스를 제공하는 데 필요한 개인정보를 최소한으로 처리합니다."
       sections={[
         {
           title: "1. 처리하는 개인정보와 목적",
@@ -70,7 +70,7 @@ export default function Page() {
         {
           title: "7. 자동 수집 정보",
           paragraphs: [
-            "끼우는 광고나 이용자 추적을 위한 쿠키 또는 SDK를 사용하지 않습니다. 로그인 유지와 서비스 보안에 필요한 인증 정보 및 접속 기록은 서비스 이용 과정에서 생성될 수 있습니다.",
+            "끼우 투두는 광고나 이용자 추적을 위한 쿠키 또는 SDK를 사용하지 않습니다. 로그인 유지와 서비스 보안에 필요한 인증 정보 및 접속 기록은 서비스 이용 과정에서 생성될 수 있습니다.",
           ],
         },
         {
